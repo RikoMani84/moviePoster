@@ -1,59 +1,216 @@
-/*
-Error: Invalid CSS after "...      display: ": expected expression (e.g. 1px, bold), was ";"
-        on line 16 of D:\mohirDev\lesson_1\assets\style\style.scss
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
-11:     .wrapper {
-12:         max-width: 1320px;
-13:         margin: 0 auto;
-14: 
-15:         .movie-block {
-16:             display: ;
-17:         }
-18: 
-19:         .trailer-block {
-20:             display: none;
-21:         }
+body {
+  background-image: url("../image/AAAABer7SeWc6FvkBqWtk61GwL7rshAEVCOARQZVTEJGnLXykYBlO4nbbr6gs7M650BjULuaN6hucXKr5xY2iqPAajrxXd70HawdJeuD.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  body .wrapper {
+    max-width: 1400px;
+    margin: 0 auto; }
+    body .wrapper .movie-block {
+      display: flex; }
+      body .wrapper .movie-block .info-block {
+        padding: 25px 0; }
+        body .wrapper .movie-block .info-block .name {
+          font-family: "NetflixSans-Bold";
+          font-weight: 100;
+          margin: 40px 0 16px;
+          font-size: 24px;
+          color: #fff; }
+        body .wrapper .movie-block .info-block .date-rate {
+          display: flex;
+          color: #a3a3a3;
+          font-size: 14px;
+          font-family: "NetflixSans-Bold";
+          font-weight: 100; }
+          body .wrapper .movie-block .info-block .date-rate .year,
+          body .wrapper .movie-block .info-block .date-rate .rate,
+          body .wrapper .movie-block .info-block .date-rate .season {
+            border-right: 1px solid;
+            border-color: #a3a3a3;
+            margin-right: 5px;
+            padding: 0 5px 0 0; }
+          body .wrapper .movie-block .info-block .date-rate .rate div {
+            border: 1px solid; }
+        body .wrapper .movie-block .info-block .about {
+          width: 500px;
+          margin: 16px 0;
+          color: #fff;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22px;
+          font-family: "NetflixSans-Bold";
+          font-weight: 100; }
+        body .wrapper .movie-block .info-block .item-starring,
+        body .wrapper .movie-block .info-block .item-creators {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22px;
+          font-family: "NetflixSans-Bold";
+          font-weight: 100; }
+          body .wrapper .movie-block .info-block .item-starring .title-item-label,
+          body .wrapper .movie-block .info-block .item-creators .title-item-label {
+            color: #a3a3a3; }
+          body .wrapper .movie-block .info-block .item-starring .title-item-list,
+          body .wrapper .movie-block .info-block .item-creators .title-item-list {
+            color: #fff; }
+    body .wrapper .videos-block {
+      background-color: #181818d1;
+      padding: 25px; }
+      body .wrapper .videos-block .title-section-header {
+        display: flex;
+        font-family: "NetflixSans-Bold"; }
+        body .wrapper .videos-block .title-section-header .header-text {
+          color: #fff;
+          font-size: 30px;
+          font-weight: 100;
+          line-height: 34px; }
+        body .wrapper .videos-block .title-section-header .subheader-text {
+          color: #a3a3a3;
+          white-space: nowrap;
+          border-left: 1px solid #a3a3a3;
+          margin-left: 9px;
+          padding: 5px 0 0 15px;
+          font-size: 20px; }
+      body .wrapper .videos-block .trailer-block section {
+        font-family: "NetflixSans-Bold"; }
+        body .wrapper .videos-block .trailer-block section .container .carousel {
+          display: block;
+          text-align: left;
+          position: relative;
+          margin-bottom: 22px;
+          padding: 35px; }
+          body .wrapper .videos-block .trailer-block section .container .carousel input {
+            clip: rect(1px, 1px, 1px, 1px);
+            clip-path: inset(50%);
+            height: 1px;
+            width: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute; }
+          body .wrapper .videos-block .trailer-block section .container .carousel input:nth-of-type(6):checked ~ .carousel__slides .carousel__slide:first-of-type {
+            margin-left: -500%; }
+          body .wrapper .videos-block .trailer-block section .container .carousel input:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type {
+            margin-left: -400%; }
+          body .wrapper .videos-block .trailer-block section .container .carousel input:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type {
+            margin-left: -300%; }
+          body .wrapper .videos-block .trailer-block section .container .carousel input:nth-of-type(3):checked ~ .carousel__slides .carousel__slide:first-of-type {
+            margin-left: -200%; }
+          body .wrapper .videos-block .trailer-block section .container .carousel input:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type {
+            margin-left: -100%; }
+          body .wrapper .videos-block .trailer-block section .container .carousel input:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type {
+            margin-left: 0%; }
+          body .wrapper .videos-block .trailer-block section .container .carousel input:nth-of-type(1):checked ~ .carousel__thumbnails li:nth-of-type(1) {
+            box-shadow: 0px 0px 0px 5px rgba(255, 0, 0, 0.753); }
+          body .wrapper .videos-block .trailer-block section .container .carousel input:nth-of-type(2):checked ~ .carousel__thumbnails li:nth-of-type(2) {
+            box-shadow: 0px 0px 0px 5px rgba(255, 0, 0, 0.753); }
+          body .wrapper .videos-block .trailer-block section .container .carousel input:nth-of-type(3):checked ~ .carousel__thumbnails li:nth-of-type(3) {
+            box-shadow: 0px 0px 0px 5px rgba(255, 0, 0, 0.753); }
+          body .wrapper .videos-block .trailer-block section .container .carousel input:nth-of-type(4):checked ~ .carousel__thumbnails li:nth-of-type(4) {
+            box-shadow: 0px 0px 0px 5px rgba(255, 0, 0, 0.753); }
+          body .wrapper .videos-block .trailer-block section .container .carousel input:nth-of-type(5):checked ~ .carousel__thumbnails li:nth-of-type(5) {
+            box-shadow: 0px 0px 0px 5px rgba(255, 0, 0, 0.753); }
+          body .wrapper .videos-block .trailer-block section .container .carousel input:nth-of-type(6):checked ~ .carousel__thumbnails li:nth-of-type(6) {
+            box-shadow: 0px 0px 0px 5px rgba(255, 0, 0, 0.753); }
+          body .wrapper .videos-block .trailer-block section .container .carousel .carousel__slides {
+            position: relative;
+            z-index: 1;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            display: flex;
+            padding-left: 10px;
+            margin-bottom: 30px; }
+            body .wrapper .videos-block .trailer-block section .container .carousel .carousel__slides .carousel__slide {
+              position: relative;
+              display: block;
+              flex: 1 0 100%;
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              transition: all 300ms ease-out;
+              vertical-align: top;
+              box-sizing: border-box;
+              white-space: normal; }
+              body .wrapper .videos-block .trailer-block section .container .carousel .carousel__slides .carousel__slide figure {
+                display: flex;
+                margin: 0; }
+                body .wrapper .videos-block .trailer-block section .container .carousel .carousel__slides .carousel__slide figure div {
+                  position: relative;
+                  width: 50%; }
+                  body .wrapper .videos-block .trailer-block section .container .carousel .carousel__slides .carousel__slide figure div iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 100%; }
+                body .wrapper .videos-block .trailer-block section .container .carousel .carousel__slides .carousel__slide figure div:before {
+                  display: block;
+                  content: "";
+                  width: 100%;
+                  padding-top: 66.6666666667%; }
+              body .wrapper .videos-block .trailer-block section .container .carousel .carousel__slides .carousel__slide iframe {
+                display: block;
+                flex: 1 1 auto;
+                object-fit: cover; }
+              body .wrapper .videos-block .trailer-block section .container .carousel .carousel__slides .carousel__slide figcaption {
+                align-self: flex-end;
+                padding: 20px 20px 0 20px;
+                flex: 0 0 auto;
+                width: 25%;
+                min-width: 150px;
+                color: #fff; }
+                body .wrapper .videos-block .trailer-block section .container .carousel .carousel__slides .carousel__slide figcaption .credit {
+                  margin-top: 1rem;
+                  color: #a3a3a3;
+                  display: block; }
+          body .wrapper .videos-block .trailer-block section .container .carousel .carousel__thumbnails {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; }
+            body .wrapper .videos-block .trailer-block section .container .carousel .carousel__thumbnails li {
+              flex: 1 1 auto;
+              max-width: calc((50% / 6) - 20px);
+              margin: 0 10px;
+              transition: all 300ms ease-in-out; }
+              body .wrapper .videos-block .trailer-block section .container .carousel .carousel__thumbnails li label {
+                display: block;
+                position: relative; }
+                body .wrapper .videos-block .trailer-block section .container .carousel .carousel__thumbnails li label img {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  width: 100%;
+                  height: 100%; }
+              body .wrapper .videos-block .trailer-block section .container .carousel .carousel__thumbnails li label:before {
+                display: block;
+                content: "";
+                width: 100%;
+                padding-top: 100%; }
+              body .wrapper .videos-block .trailer-block section .container .carousel .carousel__thumbnails li label:hover,
+              body .wrapper .videos-block .trailer-block section .container .carousel .carousel__thumbnails li label:focus {
+                cursor: pointer; }
+                body .wrapper .videos-block .trailer-block section .container .carousel .carousel__thumbnails li label:hover img,
+                body .wrapper .videos-block .trailer-block section .container .carousel .carousel__thumbnails li label:focus img {
+                  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+                  transition: all 300ms ease-in-out; }
+            body .wrapper .videos-block .trailer-block section .container .carousel .carousel__thumbnails img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
 
-Backtrace:
-D:\mohirDev\lesson_1\assets\style\style.scss:16
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/lexer.rb:231:in `expected!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:723:in `assert_expr'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:68:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1134:in `sass_script'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:988:in `value!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:796:in `block in try_declaration'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `call'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `rethrow'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:809:in `try_declaration'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...      display: \": expected expression (e.g. 1px, bold), was \";\"\A         on line 16 of D:\mohirDev\lesson_1\assets\style\style.scss\A \A 11:     .wrapper {\A 12:         max-width: 1320px;\A 13:         margin: 0 auto;\A 14: \A 15:         .movie-block {\A 16:             display: ;\A 17:         }\A 18: \A 19:         .trailer-block {\A 20:             display: none;\A 21:         }"; }
+@font-face {
+  font-family: "NetflixSans-Bold";
+  src: url("../fonts/NetflixSans-Medium.otf"); }
